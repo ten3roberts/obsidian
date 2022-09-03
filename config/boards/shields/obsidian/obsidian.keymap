@@ -32,7 +32,7 @@
                    &kp A    &kp R     &kp S   &kp T    &kp G                 &kp M    &kp N &kp E     &kp I      &kp O
                    &kp X    &kp C     &kp D   &kp V    &kp Z                 &kp K    &kp H &kp COMMA &kp PERIOD &kp SLASH
 
-                   &mt CTRL ESC &mt LGUI SPACE &kp ALT                                &kp BSPC &lt 1 TAB &lt 2 RET
+                   &mt LCTRL ESC &mt LGUI SPACE &kp LALT                                &kp BSPC &lt 1 TAB &lt 2 RET
 
                 >;
 
