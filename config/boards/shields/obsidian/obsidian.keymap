@@ -20,6 +20,17 @@
  
 /* Layers */
 / { 
+
+    combos {
+        compatible = "zmk,combos";
+        combo_bt_clr {
+            timeout-ms = <1500>;
+            layers = <2>;
+            key-positions = <6 8>;
+            bindings = <&bt BT_CLR>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,7 +48,7 @@
             
         alpha {
         bindings = <
-            &kp CARET &kp N7 &kp N8  &kp N9 &kp STAR                       &kp UNDERSCORE &kp AMPERSAND  &kp LBRC       &kp RBRC  &kp SEMI  
+            &kp CARET &kp N7 &kp N8  &kp N9 &kp STAR                       &kp UNDERSCORE &kp EQUAL      &kp LBRC       &kp RBRC  &kp SEMI  
             &kp EXCL  &kp N4 &kp N5  &kp N6 &kp PLUS                       &kp LPAR       &kp RPAR       &kp LBKT       &kp RBKT  &kp APOS     
             &kp N0    &kp N1 &kp N2  &kp N3 &kp MINUS                      &kp PERCENT    &trans         &trans         &trans    &kp BACKSLASH
                              &trans  &trans &trans                         &trans         &trans         &trans
@@ -46,11 +57,22 @@
 
         sys {
         bindings = <
-            &kp F1  &kp F2  &kp F3     &kp F4       &kp F5                     &kp HOME   &kp DEL   &kp UP     &kp &trans &bt BT_CLR
-            &kp F6  &kp F7  &kp F8     &kp F9       &kp F10                    &kp END    &kp LEFT  &kp DOWN   &kp RIGHT  &bt BT_SEL 0
-            &kp F11 &kp F12 &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP               &kp C_PREV &kp C_PP  &kp C_NEXT &kp PSCRN  &bt BT_NXT
-                            &trans     &trans       &trans                     &trans     &trans    &trans
+            &kp F1  &kp F2  &kp F3     &kp F4       &kp F5                     &trans     &kp HOME   &kp UP     &kp END    &tog 3
+            &kp F6  &kp F7  &kp F8     &kp F9       &kp F10                    &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &bt BT_SEL 0
+            &kp F11 &kp F12 &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP               &kp C_PP   &kp C_PREV &kp C_NEXT &kp PSCRN  &bt BT_NXT
+                            &trans     &trans       &trans                     &trans     &trans     &trans
             >;
+        };
+
+        gaming {
+            bindings = <
+                   &kp Q    &kp W     &kp E   &kp R    &kp T                 &kp Y    &kp U &kp I     &kp O      &tog 3
+                   &kp A    &kp S     &kp D   &kp F    &kp G                 &kp H    &kp J &kp K     &kp L      &kp SEMI
+                   &kp Z    &kp X     &kp C   &kp V    &kp B                 &kp N    &kp M &kp COMMA &kp PERIOD &kp SLASH
+
+                   &mt LALT ESC &kp SPACE &kp LCTRL                          &mt LGUI BSPC &lt 1 TAB &mt LSHIFT RET
+
+                >;
         };
     };
     
