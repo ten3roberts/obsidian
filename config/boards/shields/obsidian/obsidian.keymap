@@ -9,10 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-/* &mt { */
-/*     tapping-term-ms = <201>; */
-/*     flavor = "tap-preferred"; */
-/*  }; */
+&mt {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <250>;
+    flavor = "tap-preferred";
+ };
 /* &sk { */
 /*      release-after-ms = <2000>; */
 /*      quick-release; */
@@ -28,6 +29,12 @@
             layers = <2>;
             key-positions = <6 8>;
             bindings = <&bt BT_CLR>;
+        };
+        combo_ret {
+            timeout-ms = <200>;
+            layers = <0 1>;
+            key-positions = <10 19>;
+            bindings = <&kp RET>;
         };
     };
 
