@@ -30,12 +30,6 @@
             key-positions = <6 8>;
             bindings = <&bt BT_CLR>;
         };
-        combo_ret {
-            timeout-ms = <200>;
-            layers = <0 1>;
-            key-positions = <10 19>;
-            bindings = <&kp RET>;
-        };
     };
 
     keymap {
