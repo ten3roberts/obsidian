@@ -71,7 +71,7 @@
                    &kp A    &kp S     &kp D   &kp F    &kp G                 &kp H    &kp J &kp K     &kp L      &kp SEMI
                    &kp Z    &kp X     &kp C   &kp V    &kp B                 &kp N    &kp M &kp COMMA &kp PERIOD &kp SLASH
 
-                   &mt LALT ESC &kp SPACE &kp LCTRL                          &mt LGUI BSPC &lt 1 TAB &mt LSHIFT RET
+                   &mt LSHIFT ESC &kp SPACE &kp LCTRL                          &mt LGUI BSPC &lt 1 TAB &mt LALT RET
 
                 >;
         };
