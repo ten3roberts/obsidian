@@ -11,7 +11,6 @@
 
 &mt {
     tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
     flavor = "tap-preferred";
  };
 /* &sk { */
@@ -49,9 +48,9 @@
             
         alpha {
         bindings = <
-            &kp GRAVE &kp N7 &kp N8  &kp N9 &kp STAR                       &kp UNDERSCORE &kp AMPERSAND   &kp LBRC       &kp RBRC  &kp SEMI  
+            &kp GRAVE &kp N7 &kp N8  &kp N9 &kp STAR                       &kp UNDERSCORE &kp AMPERSAND  &kp LBRC       &kp RBRC  &kp SEMI  
             &kp EXCL  &kp N4 &kp N5  &kp N6 &kp MINUS                      &kp LPAR       &kp RPAR       &kp LBKT       &kp RBKT  &kp APOS     
-            &kp N0    &kp N1 &kp N2  &kp N3 &kp PLUS                       &kp EQUAL      &trans         &trans         &trans    &kp BACKSLASH
+            &kp N0    &kp N1 &kp N2  &kp N3 &kp PLUS                       &kp PERCENT    &kb EQUAL      &trans         &trans    &kp BACKSLASH
                              &trans  &trans &trans                         &trans         &trans         &trans
             >;
         };
