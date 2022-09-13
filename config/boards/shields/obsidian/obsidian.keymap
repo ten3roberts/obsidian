@@ -14,14 +14,7 @@
     flavor = "tap-preferred";
  };
  
- &mlt {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    global-quick-tap;
-    bindings = <&kp>, <&sl>;
- };
+
  
  *
 /* &sk { */
@@ -39,6 +32,17 @@
             layers = <2>;
             key-positions = <6 8>;
             bindings = <&bt BT_CLR>;
+        };
+    };
+    
+    behaviors {
+        mlt: mod-layer-tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            global-quick-tap;
+            bindings = <&kp>, <&sl>;
         };
     };
 
