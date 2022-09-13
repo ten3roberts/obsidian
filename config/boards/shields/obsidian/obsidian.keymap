@@ -36,6 +36,7 @@
     
     behaviors {
         mlt: mod-layer-tap {
+            label = "Mod Layer Tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
