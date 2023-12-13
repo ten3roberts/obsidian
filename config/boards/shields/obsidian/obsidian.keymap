@@ -12,7 +12,7 @@
 &mt {
     tapping-term-ms = <100>;
     quick-tap-ms = <200>;
-    flavor = "tap-preferred";
+    flavor = "balanced";
  };
  
 
@@ -40,7 +40,7 @@
             label = "Mod Layer Tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <100>;
             global-quick-tap;
             bindings = <&kp>, <&sl>;
