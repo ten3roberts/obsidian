@@ -40,8 +40,8 @@
             label = "Mod Layer Tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <100>;
             global-quick-tap;
             bindings = <&kp>, <&sl>;
         };
