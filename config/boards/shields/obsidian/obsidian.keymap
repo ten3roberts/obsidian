@@ -11,7 +11,7 @@
 &mt {
     tapping-term-ms = <150>;
     quick-tap-ms = <200>;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
 };
 
 /* &sk { */
@@ -20,6 +20,15 @@
 /* }; */
 
 / { 
+    combos {
+        compatible = "zmk,combos";
+        combo_bt_clr {
+            timeout-ms = <100>;
+            key-positions = <0 4>;  // Q + SEMI (upper left + upper right corners)
+            bindings = <&bt BT_CLR>;
+        };
+    };
+
     macros {
         // Tap macros with minimum hold duration for game compatibility
         tap_esc: tap_esc {
