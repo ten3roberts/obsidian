@@ -29,44 +29,44 @@
         };
     };
 
-    macros {
-        // Tap macros with minimum hold duration for game compatibility
-        tap_esc: tap_esc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&kp ESC>;
-        };
-        tap_space: tap_space {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&kp SPACE>;
-        };
-        tap_tab: tap_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&kp TAB>;
-        };
-        tap_ret: tap_ret {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&kp RET>;
-        };
-        tap_bspc: tap_bspc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings = <&kp BSPC>;
-        };
-    };
+    /* macros { */
+    /*     // Tap macros with minimum hold duration for game compatibility */
+    /*     tap_esc: tap_esc { */
+    /*         compatible = "zmk,behavior-macro"; */
+    /*         #binding-cells = <0>; */
+    /*         wait-ms = <30>; */
+    /*         tap-ms = <30>; */
+    /*         bindings = <&kp ESC>; */
+    /*     }; */
+    /*     tap_space: tap_space { */
+    /*         compatible = "zmk,behavior-macro"; */
+    /*         #binding-cells = <0>; */
+    /*         wait-ms = <30>; */
+    /*         tap-ms = <30>; */
+    /*         bindings = <&kp SPACE>; */
+    /*     }; */
+    /*     tap_tab: tap_tab { */
+    /*         compatible = "zmk,behavior-macro"; */
+    /*         #binding-cells = <0>; */
+    /*         wait-ms = <30>; */
+    /*         tap-ms = <30>; */
+    /*         bindings = <&kp TAB>; */
+    /*     }; */
+    /*     tap_ret: tap_ret { */
+    /*         compatible = "zmk,behavior-macro"; */
+    /*         #binding-cells = <0>; */
+    /*         wait-ms = <30>; */
+    /*         tap-ms = <30>; */
+    /*         bindings = <&kp RET>; */
+    /*     }; */
+    /*     tap_bspc: tap_bspc { */
+    /*         compatible = "zmk,behavior-macro"; */
+    /*         #binding-cells = <0>; */
+    /*         wait-ms = <30>; */
+    /*         tap-ms = <30>; */
+    /*         bindings = <&kp BSPC>; */
+    /*     }; */
+    /* }; */
 
     behaviors {
         mlt: mod-layer-tap {
@@ -79,63 +79,63 @@
             bindings = <&kp>, <&sl>;
         };
 
-        // Hold-tap with extended tap duration for gaming
-        mt_esc: mod_tap_esc {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&tap_esc>;
-        };
-        mt_space: mod_tap_space {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&tap_space>;
-        };
-        mt_tab: mod_tap_tab {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&tap_tab>;
-        };
-        mt_ret: mod_tap_ret {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&tap_ret>;
-        };
-        mt_bspc: mod_tap_bspc {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&tap_bspc>;
-        };
-        lt_tab: layer_tap_tab {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings = <&mo>, <&tap_tab>;
-        };
-        lt_ret: layer_tap_ret {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            bindings = <&mo>, <&tap_ret>;
-        };
+        /* // Hold-tap with extended tap duration for gaming */
+        /* mt_esc: mod_tap_esc { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     #binding-cells = <2>; */
+        /*     flavor = "balanced"; */
+        /*     tapping-term-ms = <100>; */
+        /*     quick-tap-ms = <200>; */
+        /*     bindings = <&kp>, <&tap_esc>; */
+        /* }; */
+        /* mt_space: mod_tap_space { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     #binding-cells = <2>; */
+        /*     flavor = "balanced"; */
+        /*     tapping-term-ms = <100>; */
+        /*     quick-tap-ms = <200>; */
+        /*     bindings = <&kp>, <&tap_space>; */
+        /* }; */
+        /* mt_tab: mod_tap_tab { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     #binding-cells = <2>; */
+        /*     flavor = "balanced"; */
+        /*     tapping-term-ms = <100>; */
+        /*     quick-tap-ms = <200>; */
+        /*     bindings = <&kp>, <&tap_tab>; */
+        /* }; */
+        /* mt_ret: mod_tap_ret { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     #binding-cells = <2>; */
+        /*     flavor = "balanced"; */
+        /*     tapping-term-ms = <100>; */
+        /*     quick-tap-ms = <200>; */
+        /*     bindings = <&kp>, <&tap_ret>; */
+        /* }; */
+        /* mt_bspc: mod_tap_bspc { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     #binding-cells = <2>; */
+        /*     flavor = "balanced"; */
+        /*     tapping-term-ms = <100>; */
+        /*     quick-tap-ms = <200>; */
+        /*     bindings = <&kp>, <&tap_bspc>; */
+        /* }; */
+        /* lt_tab: layer_tap_tab { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     #binding-cells = <2>; */
+        /*     flavor = "balanced"; */
+        /*     tapping-term-ms = <100>; */
+        /*     quick-tap-ms = <200>; */
+        /*     bindings = <&mo>, <&tap_tab>; */
+        /* }; */
+        /* lt_ret: layer_tap_ret { */
+        /*     compatible = "zmk,behavior-hold-tap"; */
+        /*     #binding-cells = <2>; */
+        /*     flavor = "balanced"; */
+        /*     tapping-term-ms = <100>; */
+        /*     quick-tap-ms = <200>; */
+        /*     bindings = <&mo>, <&tap_ret>; */
+        /* }; */
     };
 
     keymap {
@@ -143,72 +143,53 @@
 
         primary {
             bindings = <
-            //┌──────────┬──────────┬──────────┬──────────┬──────────┐                    ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-               &kp Q      &kp W      &kp F      &kp P      &kp B                           &kp J      &kp L      &kp U      &kp Y      &kp SEMI
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp A      &kp R      &kp S      &kp T      &kp G                           &kp M      &kp N      &kp E      &kp I      &kp O
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp X      &kp C      &kp D      &kp V      &kp Z                           &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH
-            //└──────────┴──────────┴──────────┼──────────┼──────────┼──────────┐┌──────────┼──────────┼──────────┴──────────┴──────────┴──────────┘
-                                                &mt_esc LALT 0 &mt_space LCTRL 0 &mlt LSHIFT 1  &mt_bspc LGUI 0 &lt_tab 1 0 &lt_ret 2 0
-            //                                 └──────────┴──────────┴──────────┘└──────────┴──────────┴──────────┘
-            >;
-        };
+                   &kp Q    &kp W     &kp F   &kp P    &kp B                 &kp J    &kp L &kp U     &kp Y      &kp SEMI
+                   &kp A    &kp R     &kp S   &kp T    &kp G                 &kp M    &kp N &kp E     &kp I      &kp O
+                   &kp X    &kp C     &kp D   &kp V    &kp Z                 &kp K    &kp H &kp COMMA &kp PERIOD &kp SLASH
 
+                   &mt LALT ESC &mt LCTRL SPACE &mlt LSHIFT 1                  &mt LGUI BSPC &lt 1 TAB &lt 2 RET
+
+                >;
+
+        };
+            
         alpha {
-            bindings = <
-            //┌──────────┬──────────┬──────────┬──────────┬──────────┐                    ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-               &kp GRAVE  &kp N7     &kp N8     &kp N9     &kp STAR                        &kp UNDER  &kp AMPS   &kp LBRC   &kp RBRC   &kp SEMI
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp EXCL   &kp N4     &kp N5     &kp N6     &kp MINUS                       &kp LPAR   &kp RPAR   &kp LBKT   &kp RBKT   &kp APOS
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp N0     &kp N1     &kp N2     &kp N3     &kp PLUS                        &kp PRCNT  &kp EQUAL  &trans     &trans     &kp BSLH
-            //└──────────┴──────────┴──────────┼──────────┼──────────┼──────────┐┌──────────┼──────────┼──────────┴──────────┴──────────┴──────────┘
-                                                &trans     &trans     &trans      &trans     &trans     &trans
-            //                                 └──────────┴──────────┴──────────┘└──────────┴──────────┴──────────┘
+        bindings = <
+            &kp GRAVE &kp N7 &kp N8  &kp N9 &kp STAR                       &kp UNDERSCORE &kp AMPERSAND  &kp LBRC       &kp RBRC  &kp SEMI  
+            &kp EXCL  &kp N4 &kp N5  &kp N6 &kp MINUS                      &kp LPAR       &kp RPAR       &kp LBKT       &kp RBKT  &kp APOS     
+            &kp N0    &kp N1 &kp N2  &kp N3 &kp PLUS                       &kp PERCENT    &kp EQUAL      &trans         &trans    &kp BACKSLASH
+                             &trans  &trans &trans                         &trans         &trans         &trans
             >;
         };
 
         sys {
-            bindings = <
-            //┌──────────┬──────────┬──────────┬──────────┬──────────┐                    ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-               &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                          &trans     &kp HOME   &kp UP     &kp END    &sl 3
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp F6     &kp F7     &kp F8     &kp F9     &kp F10                         &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &tog 4
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp F11    &kp F12    &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP                  &kp C_PREV &kp C_PP   &kp C_NEXT &kp PSCRN  &bt BT_NXT
-            //└──────────┴──────────┴──────────┼──────────┼──────────┼──────────┐┌──────────┼──────────┼──────────┴──────────┴──────────┴──────────┘
-                                                &trans     &trans     &trans      &trans     &trans     &trans
-            //                                 └──────────┴──────────┴──────────┘└──────────┴──────────┴──────────┘
+        bindings = <
+            &kp F1  &kp F2  &kp F3     &kp F4       &kp F5                     &trans     &kp HOME   &kp UP     &kp END    &sl 3
+            &kp F6  &kp F7  &kp F8     &kp F9       &kp F10                    &kp DEL    &kp LEFT   &kp DOWN   &kp RIGHT  &tog 4
+            &kp F11 &kp F12 &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP               &kp C_PREV &kp C_PP   &kp C_NEXT &kp PSCRN  &bt BT_NXT
+                            &trans     &trans       &trans                     &trans     &trans     &trans
             >;
         };
-
-        bluetooth {
-            bindings = <
-            //┌──────────┬──────────┬──────────┬──────────┬──────────┐                    ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-               &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4           &kp F1     &kp F2     &kp F3     &kp F4     &tog 3
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_CLR &trans                   &kp F5     &kp F6     &kp F7     &kp F8     &tog 4
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &trans     &trans     &trans     &trans     &trans                          &kp F9     &kp F10    &kp F11    &kp F12    &trans
-            //└──────────┴──────────┴──────────┼──────────┼──────────┼──────────┐┌──────────┼──────────┼──────────┴──────────┴──────────┴──────────┘
-                                                &trans     &trans     &trans      &trans     &trans     &trans
-            //                                 └──────────┴──────────┴──────────┘└──────────┴──────────┴──────────┘
+        
+        blutooth {
+        bindings = <
+            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp F1  &kp F2  &kp F3  &kp F4  &tog 3
+            &bt BT_SEL 5 &bt BT_SEL 6 &bt BT_SEL 7 &bt BT_CLR   &trans         &kp F5  &kp F6  &kp F7  &kp F8  &tog 4
+            &trans       &trans       &trans       &trans       &trans         &kp F9  &kp F10 &kp F11 &kp F12 &trans
+                                      &trans       &trans       &trans         &trans  &trans  &trans
             >;
         };
 
         gaming {
             bindings = <
-            //┌──────────┬──────────┬──────────┬──────────┬──────────┐                    ┌──────────┬──────────┬──────────┬──────────┬──────────┐
-               &kp Q      &kp W      &kp E      &kp R      &kp T                           &kp Y      &kp U      &kp I      &kp O      &tog 3
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp A      &kp S      &kp D      &kp F      &kp G                           &kp H      &kp J      &kp K      &kp L      &tog 4
-            //├──────────┼──────────┼──────────┼──────────┼──────────┤                    ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &kp Z      &kp X      &kp C      &kp V      &kp B                           &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
-            //└──────────┴──────────┴──────────┼──────────┼──────────┼──────────┐┌──────────┼──────────┼──────────┴──────────┴──────────┴──────────┘
-                                                &kp LCTRL  &tap_space &kp LSHIFT  &mt_bspc ESC 0 &lt_tab 1 0 &mt_ret LALT 0
-            //                                 └──────────┴──────────┴──────────┘└──────────┴──────────┴──────────┘
-            >;
+                   &kp Q    &kp W     &kp E   &kp R    &kp T                 &kp Y    &kp U &kp I     &kp O      &tog 3
+                   &kp A    &kp S     &kp D   &kp F    &kp G                 &kp H    &kp J &kp K     &kp L      &tog 4
+                   &kp Z    &kp X     &kp C   &kp V    &kp B                 &kp N    &kp M &kp COMMA &kp PERIOD &kp ESC
+
+                   &kp LCTRL &kp SPACE &kp LSHIFT                          &mt ESC BSPC &lt 1 TAB &mt LALT RET
+
+                >;
         };
     };
+    
 };
